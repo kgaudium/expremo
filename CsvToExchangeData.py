@@ -1,7 +1,5 @@
 import csv
 import datetime
-import codecs
-import io
 from decimal import Decimal
 
 import ExchangeData
@@ -13,7 +11,6 @@ DATE_ROW = 0
 ENCODING = 'utf-8'
 
 
-# TODO
 def exchange_data_list_from_csv(csv_path: str, exchange_data_type: ExchangeData.ExchangeDataType, name: str) -> list:
     my_list = []
 
