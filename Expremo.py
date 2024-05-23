@@ -59,6 +59,7 @@ class Expremo:
 
         self.set_train_data(self.get_data_slice(*self.train_range))
         self.choose_best_regression_type()
+        self.update_regression_func()
 
         func = self.get_regression_func()
         predict_point = start_point + train_distance + prediction_distance
